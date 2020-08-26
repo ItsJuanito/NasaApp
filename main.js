@@ -1,4 +1,5 @@
 
+
 const api = {
     key: "https://api.nasa.gov/planetary/apod?",
     base: "PWhhelBrT1WPUSF5ujClLDHxZV3nMMT4U8Kxz3b9"
@@ -27,13 +28,13 @@ function displayResults(data) {
     document.write(`<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"`);
     document.write(`
         <body>
-            <div id="in" class="py-2 container">
+            <div id="in" class="my-3 container text-center">
             </div>`
     );
 
     let input = document.getElementById('in').innerHTML = `
         <h1 class="d-flex justify-content-center">NASA Image Gallery</h1>
-        <input class="form-control" id="input" autocomplete="off" type="text" placeholder="Search for an image...">`;
+        <a href="index.html" class="my-3 btn btn-primary">Go Back to Search</a>`;
 
     let size = data.collection.items;
 
@@ -62,8 +63,9 @@ function displayResults(data) {
     }*/
 
     document.write(`
-    <a class="my-3 btn btn-primary" href="https://www.nasa.gov/multimedia/imagegallery/index.html">Visit Nasa's image gallery</a>
-    <script src="main.js"></script>
+    <div class="my-3 container">
+        <a class="my-3 btn btn-info" href="https://www.nasa.gov/multimedia/imagegallery/index.html">Visit Nasa's image gallery</a>
+    </div>
     </body`);
 }
 
