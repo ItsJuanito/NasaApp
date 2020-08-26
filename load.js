@@ -21,7 +21,7 @@ success: function(data) {
         <h2 class="my-3" id="title">${data.title}</h2>
         <h4 class="my-3" id="copyright">By ${data.copyright}</h4>
         <p class="my-3" id="explanation">${data.explanation}</p>
-        <a class="mb-3 btn btn-primary" href="https://www.nasa.gov/multimedia/imagegallery/index.html">Visit Nasa image gallery</a>`;
+        <a class="mb-3 btn btn-primary" href="https://www.nasa.gov/multimedia/imagegallery/index.html">Visit Nasa's image gallery</a>`;
     }
 
     if (data.copyright === undefined) {
