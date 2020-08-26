@@ -3,24 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nasa App</title>
+    <title>NASA App</title>
 
+    <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="load.js"></script>
 </head>
 <body>
-    <div class="container-fluid">
-        <h1>Welcome to the Nasa Gallery</h1>
+    <div class="py-2 container">
+        <h1 class="d-flex justify-content-center">NASA's Image of the Day</h1>
+        <input class="form-control" id="input" autocomplete="off" type="text" placeholder="Search for an image...">
     </div>
 
-    <div id="info" class="container-fluid">
-        <img id="img" src="./images/galaxy.jpg" class="rounded" alt="Cinque Terre" width="75%" height="30%">
-        <h2 id="title">Title</h2>
-        <h4 id="copyright">Photographer</h4>
-        <p id="explanation">Explanation...</p>
+
+    <div class="py-2 container">
+        <div class="card">
+            <div class="card-body">
+                <div id="info">
+                    <img id="img" src="./images/galaxy.jpg" class="rounded" alt="Default Image" width="100%" height="30%">
+                    <h2 class="my-3 card-title" id="title">Title</h2>
+                    <h4 class="my-3" id="copyright">Photographer</h4>
+                    <p class="my-3 card-text" id="explanation">There is no image of the day :(</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="link" class="container">
+        <a class="mb-3 btn btn-primary" href="https://www.nasa.gov/multimedia/imagegallery/index.html">Visit Nasa's image gallery</a>
     </div>
 
     <script src="main.js"></script>
