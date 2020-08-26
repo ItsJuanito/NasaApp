@@ -32,7 +32,7 @@ function displayResults(data) {
     );
 
     let input = document.getElementById('in').innerHTML = `
-        <h1 class="d-flex justify-content-center">NASA's Image of the Day</h1>
+        <h1 class="d-flex justify-content-center">NASA Image Gallery</h1>
         <input class="form-control" id="input" autocomplete="off" type="text" placeholder="Search for an image...">`;
 
     let size = data.collection.items;
@@ -62,7 +62,7 @@ function displayResults(data) {
     }*/
 
     document.write(`
-    <a class="my-3 btn btn-primary" href="https://www.nasa.gov/multimedia/imagegallery/index.html">Visit Nasa image gallery</a>
+    <a class="my-3 btn btn-primary" href="https://www.nasa.gov/multimedia/imagegallery/index.html">Visit Nasa's image gallery</a>
     <script src="main.js"></script>
     </body`);
 }
