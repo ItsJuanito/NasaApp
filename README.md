@@ -7,5 +7,5 @@
   - main.css: handles media queries to make sure the page is responsive.
   - load.js: includes ajax to connect to the api and loads the home page with the image of the day.
   - main.js: contains the functionality of the search-bar and gets information from the api.
-# API Source
-  - source: https://api.nasa.gov/
+# API Info
+  - api source: https://api.nasa.gov/
