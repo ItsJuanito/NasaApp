@@ -31,5 +31,5 @@ success: function(data) {
 });
 
 if(status === 404) {
-    alert('There is no Image of the Day today :(');
+    alert('There is no Image of the Day right now :(');
 }
